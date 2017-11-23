@@ -2,7 +2,8 @@
  * Created by Jeepeng on 2016/11/20.
  */
 
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 import {
   StyleSheet,
   View,
@@ -25,8 +26,8 @@ class Table extends Component {
     })).isRequired,
     columnWidth: PropTypes.number,
     height: PropTypes.number,
-    dataSource: React.PropTypes.array.isRequired,
-    renderCell: React.PropTypes.func,
+    dataSource: PropTypes.array.isRequired,
+    renderCell: PropTypes.func,
   };
 
   static defaultProps = {
